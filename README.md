@@ -20,6 +20,11 @@
   </h3>
 </p>
 
+## No-UMD fork
+- run `npm run build` to create `dist/`
+    - ES6 module (+ zipped)
+    - IIFE module (+ zipped)
+- rename `Fingerprint` to fool dumb browser inspections by `npm run build -- --environment FP2_FILENAME:<your filename>,GLOBAL_VAR_NAME:<exposed global variable in iife modules>`
 
 ## Installation
 
