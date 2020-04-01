@@ -52,7 +52,8 @@
     "test:firefox:debug": "karma start --single-run false --browsers Firefox tests/karma.conf.js",
     "test:all": "yarn run test:chrome && yarn run test:chrome:incognito && yarn run test:firefox && yarn run test:firefox:incognito && yarn run test:safari",
     "gulp": "gulp",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "build": "rollup -c --environment FP2_FILENAME:monitoring,GLOBAL_VAR_NAME:LiveSupportProvider_monitoring"
   },
   "standard": {
     "ignore": [

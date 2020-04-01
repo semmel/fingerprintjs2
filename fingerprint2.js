@@ -20,12 +20,7 @@
 * MurmurHash3 by Karan Lyons (https://github.com/karanlyons/murmurHash3.js)
 */
 
-/* global define */
-(function (name, context, definition) {
-  'use strict'
-  if (typeof window !== 'undefined' && typeof define === 'function' && define.amd) { define(definition) } else if (typeof module !== 'undefined' && module.exports) { module.exports = definition() } else if (context.exports) { context.exports = definition() } else { context[name] = definition() }
-})('Fingerprint2', this, function () {
-  'use strict'
+  'use strict';
 
   // detect if object is array
   // only implement if no native implementation is available
@@ -1462,5 +1457,4 @@
 
   Fingerprint2.x64hash128 = x64hash128
   Fingerprint2.VERSION = '2.1.0'
-  return Fingerprint2
-})
+  export default Fingerprint2
